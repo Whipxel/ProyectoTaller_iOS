@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA7A63E11DDE5B3A004E3F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A63E01DDE5B3A004E3F5C /* AppDelegate.swift */; };
+		FA7A63E31DDE5B3A004E3F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A63E21DDE5B3A004E3F5C /* ViewController.swift */; };
+		FA7A63E61DDE5B3A004E3F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7A63E41DDE5B3A004E3F5C /* Main.storyboard */; };
+		FA7A63E81DDE5B3A004E3F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7A63E71DDE5B3A004E3F5C /* Assets.xcassets */; };
+		FA7A63EB1DDE5B3A004E3F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7A63E91DDE5B3A004E3F5C /* LaunchScreen.storyboard */; };
+		FA7A63F61DDE5B3B004E3F5C /* Panic_ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A63F51DDE5B3B004E3F5C /* Panic_ButtonTests.swift */; };
+		FA7A64011DDE5B3B004E3F5C /* Panic_ButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A64001DDE5B3B004E3F5C /* Panic_ButtonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7A63F21DDE5B3B004E3F5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7A63D51DDE5B3A004E3F5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7A63DC1DDE5B3A004E3F5C;
+			remoteInfo = "Panic Button";
+		};
+		FA7A63FD1DDE5B3B004E3F5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7A63D51DDE5B3A004E3F5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7A63DC1DDE5B3A004E3F5C;
+			remoteInfo = "Panic Button";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA7A63DD1DDE5B3A004E3F5C /* Panic Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panic Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7A63E01DDE5B3A004E3F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA7A63E21DDE5B3A004E3F5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA7A63E51DDE5B3A004E3F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA7A63E71DDE5B3A004E3F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA7A63EA1DDE5B3A004E3F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA7A63EC1DDE5B3A004E3F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7A63F11DDE5B3B004E3F5C /* Panic ButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panic ButtonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7A63F51DDE5B3B004E3F5C /* Panic_ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panic_ButtonTests.swift; sourceTree = "<group>"; };
+		FA7A63F71DDE5B3B004E3F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7A63FC1DDE5B3B004E3F5C /* Panic ButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panic ButtonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7A64001DDE5B3B004E3F5C /* Panic_ButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panic_ButtonUITests.swift; sourceTree = "<group>"; };
+		FA7A64021DDE5B3B004E3F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA7A63DA1DDE5B3A004E3F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A63EE1DDE5B3B004E3F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A63F91DDE5B3B004E3F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA7A63D41DDE5B3A004E3F5C = {
+			isa = PBXGroup;
+			children = (
+				FA7A63DF1DDE5B3A004E3F5C /* Panic Button */,
+				FA7A63F41DDE5B3B004E3F5C /* Panic ButtonTests */,
+				FA7A63FF1DDE5B3B004E3F5C /* Panic ButtonUITests */,
+				FA7A63DE1DDE5B3A004E3F5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7A63DE1DDE5B3A004E3F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A63DD1DDE5B3A004E3F5C /* Panic Button.app */,
+				FA7A63F11DDE5B3B004E3F5C /* Panic ButtonTests.xctest */,
+				FA7A63FC1DDE5B3B004E3F5C /* Panic ButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7A63DF1DDE5B3A004E3F5C /* Panic Button */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A63E01DDE5B3A004E3F5C /* AppDelegate.swift */,
+				FA7A63E21DDE5B3A004E3F5C /* ViewController.swift */,
+				FA7A63E41DDE5B3A004E3F5C /* Main.storyboard */,
+				FA7A63E71DDE5B3A004E3F5C /* Assets.xcassets */,
+				FA7A63E91DDE5B3A004E3F5C /* LaunchScreen.storyboard */,
+				FA7A63EC1DDE5B3A004E3F5C /* Info.plist */,
+			);
+			path = "Panic Button";
+			sourceTree = "<group>";
+		};
+		FA7A63F41DDE5B3B004E3F5C /* Panic ButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A63F51DDE5B3B004E3F5C /* Panic_ButtonTests.swift */,
+				FA7A63F71DDE5B3B004E3F5C /* Info.plist */,
+			);
+			path = "Panic ButtonTests";
+			sourceTree = "<group>";
+		};
+		FA7A63FF1DDE5B3B004E3F5C /* Panic ButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A64001DDE5B3B004E3F5C /* Panic_ButtonUITests.swift */,
+				FA7A64021DDE5B3B004E3F5C /* Info.plist */,
+			);
+			path = "Panic ButtonUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7A63DC1DDE5B3A004E3F5C /* Panic Button */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7A64051DDE5B3B004E3F5C /* Build configuration list for PBXNativeTarget "Panic Button" */;
+			buildPhases = (
+				FA7A63D91DDE5B3A004E3F5C /* Sources */,
+				FA7A63DA1DDE5B3A004E3F5C /* Frameworks */,
+				FA7A63DB1DDE5B3A004E3F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Panic Button";
+			productName = "Panic Button";
+			productReference = FA7A63DD1DDE5B3A004E3F5C /* Panic Button.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA7A63F01DDE5B3B004E3F5C /* Panic ButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7A64081DDE5B3B004E3F5C /* Build configuration list for PBXNativeTarget "Panic ButtonTests" */;
+			buildPhases = (
+				FA7A63ED1DDE5B3B004E3F5C /* Sources */,
+				FA7A63EE1DDE5B3B004E3F5C /* Frameworks */,
+				FA7A63EF1DDE5B3B004E3F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7A63F31DDE5B3B004E3F5C /* PBXTargetDependency */,
+			);
+			name = "Panic ButtonTests";
+			productName = "Panic ButtonTests";
+			productReference = FA7A63F11DDE5B3B004E3F5C /* Panic ButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA7A63FB1DDE5B3B004E3F5C /* Panic ButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7A640B1DDE5B3B004E3F5C /* Build configuration list for PBXNativeTarget "Panic ButtonUITests" */;
+			buildPhases = (
+				FA7A63F81DDE5B3B004E3F5C /* Sources */,
+				FA7A63F91DDE5B3B004E3F5C /* Frameworks */,
+				FA7A63FA1DDE5B3B004E3F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7A63FE1DDE5B3B004E3F5C /* PBXTargetDependency */,
+			);
+			name = "Panic ButtonUITests";
+			productName = "Panic ButtonUITests";
+			productReference = FA7A63FC1DDE5B3B004E3F5C /* Panic ButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA7A63D51DDE5B3A004E3F5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Anexoft;
+				TargetAttributes = {
+					FA7A63DC1DDE5B3A004E3F5C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FA7A63F01DDE5B3B004E3F5C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA7A63DC1DDE5B3A004E3F5C;
+					};
+					FA7A63FB1DDE5B3B004E3F5C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA7A63DC1DDE5B3A004E3F5C;
+					};
+				};
+			};
+			buildConfigurationList = FA7A63D81DDE5B3A004E3F5C /* Build configuration list for PBXProject "Panic Button" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA7A63D41DDE5B3A004E3F5C;
+			productRefGroup = FA7A63DE1DDE5B3A004E3F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7A63DC1DDE5B3A004E3F5C /* Panic Button */,
+				FA7A63F01DDE5B3B004E3F5C /* Panic ButtonTests */,
+				FA7A63FB1DDE5B3B004E3F5C /* Panic ButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7A63DB1DDE5B3A004E3F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A63EB1DDE5B3A004E3F5C /* LaunchScreen.storyboard in Resources */,
+				FA7A63E81DDE5B3A004E3F5C /* Assets.xcassets in Resources */,
+				FA7A63E61DDE5B3A004E3F5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A63EF1DDE5B3B004E3F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A63FA1DDE5B3B004E3F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7A63D91DDE5B3A004E3F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A63E31DDE5B3A004E3F5C /* ViewController.swift in Sources */,
+				FA7A63E11DDE5B3A004E3F5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A63ED1DDE5B3B004E3F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A63F61DDE5B3B004E3F5C /* Panic_ButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A63F81DDE5B3B004E3F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A64011DDE5B3B004E3F5C /* Panic_ButtonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7A63F31DDE5B3B004E3F5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7A63DC1DDE5B3A004E3F5C /* Panic Button */;
+			targetProxy = FA7A63F21DDE5B3B004E3F5C /* PBXContainerItemProxy */;
+		};
+		FA7A63FE1DDE5B3B004E3F5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7A63DC1DDE5B3A004E3F5C /* Panic Button */;
+			targetProxy = FA7A63FD1DDE5B3B004E3F5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA7A63E41DDE5B3A004E3F5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7A63E51DDE5B3A004E3F5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA7A63E91DDE5B3A004E3F5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7A63EA1DDE5B3A004E3F5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA7A64031DDE5B3B004E3F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA7A64041DDE5B3B004E3F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7A64061DDE5B3B004E3F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Panic Button/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-Button";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA7A64071DDE5B3B004E3F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Panic Button/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-Button";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA7A64091DDE5B3B004E3F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Panic ButtonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-ButtonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panic Button.app/Panic Button";
+			};
+			name = Debug;
+		};
+		FA7A640A1DDE5B3B004E3F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Panic ButtonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-ButtonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panic Button.app/Panic Button";
+			};
+			name = Release;
+		};
+		FA7A640C1DDE5B3B004E3F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Panic ButtonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-ButtonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Panic Button";
+			};
+			name = Debug;
+		};
+		FA7A640D1DDE5B3B004E3F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Panic ButtonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-ButtonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Panic Button";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA7A63D81DDE5B3A004E3F5C /* Build configuration list for PBXProject "Panic Button" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A64031DDE5B3B004E3F5C /* Debug */,
+				FA7A64041DDE5B3B004E3F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7A64051DDE5B3B004E3F5C /* Build configuration list for PBXNativeTarget "Panic Button" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A64061DDE5B3B004E3F5C /* Debug */,
+				FA7A64071DDE5B3B004E3F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA7A64081DDE5B3B004E3F5C /* Build configuration list for PBXNativeTarget "Panic ButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A64091DDE5B3B004E3F5C /* Debug */,
+				FA7A640A1DDE5B3B004E3F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA7A640B1DDE5B3B004E3F5C /* Build configuration list for PBXNativeTarget "Panic ButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A640C1DDE5B3B004E3F5C /* Debug */,
+				FA7A640D1DDE5B3B004E3F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA7A63D51DDE5B3A004E3F5C /* Project object */;
+}
