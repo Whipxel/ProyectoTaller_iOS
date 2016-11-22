@@ -35,6 +35,8 @@ class AddViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+
+    
     /*@IBAction func saveBtn(_ sender: AnyObject) {
         if nameTextField.text != "" {
             data[index] = nameTextField.text!
@@ -42,8 +44,8 @@ class AddViewController: UIViewController {
         }
     }*/
     
-    //used to update or save new data
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   //used to update or save new data
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if nameTextField.text != "" && segue.identifier == "SaveData"{
             //update new data
             //if newOne == 0{
@@ -59,6 +61,6 @@ class AddViewController: UIViewController {
                 newData?.tableView.insertRows(at: [newIndexPath], with: .bottom)
             }*/
         }
-    }
+    }*/
     
 }

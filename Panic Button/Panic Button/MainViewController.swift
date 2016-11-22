@@ -56,6 +56,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    /*override func tableView(_ tableView: UITableView, didSelectRow indexPath: NSIndexPath){
+        if indexPath.section == 0{
+            nameTextField.becomeFirstResponder()
+        }
+    }*/
+    
     //Accesing to the labels in the addViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail"{
