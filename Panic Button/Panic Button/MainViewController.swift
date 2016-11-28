@@ -62,24 +62,28 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }*/
     
+    @IBAction func backBtn(_ segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func saveBtn(_ segue: UIStoryboardSegue) {
+        let newContact = segue.source as! AddViewController
+        contacts.append(newContact.nameTextField.text!)
+        tableView.reloadData()
+        dismiss(animated: true, completion: nil)
+     }
+    
+    
     //Accesing to the labels in the addViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail"{
             if let index = sender as? Int{
                 let guest = segue.destination as! AddViewController
-                //guest.contactName = contacts[index]//.name
                 guest.data = contacts
                 guest.index = index
+                guest.update = 1
             }
         }
-        /*else if segue.identifier == "AddContact"{
-            let guest = segue.destination as! AddViewController
-            
-            guest.index = contacts.count
-            guest.data = contacts
-            guest.newOne = 1
-            
-        }*/
     }
     
     /*//Used to delete a row

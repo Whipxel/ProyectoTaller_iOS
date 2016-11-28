@@ -111,12 +111,13 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="LKw-vD-Z5X">
                                             <connections>
                                                 <action selector="backBtn:" destination="8zx-wA-vWT" id="RDZ-K9-YzK"/>
+                                                <segue destination="UCm-5j-Rl6" kind="unwind" identifier="BackToMain" unwindAction="backBtn:" id="0Ph-De-MIb"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="PJb-CS-jJI">
                                             <connections>
                                                 <action selector="saveBtn:" destination="8zx-wA-vWT" id="n6m-4K-Zyi"/>
-                                                <segue destination="UCm-5j-Rl6" kind="unwind" unwindAction="saveBtnWithSegue:" id="4fB-Ft-whp"/>
+                                                <segue destination="UCm-5j-Rl6" kind="unwind" identifier="SaveContact" unwindAction="saveBtn:" id="6Sb-zY-4Mv"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
