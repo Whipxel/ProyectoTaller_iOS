@@ -2,7 +2,7 @@
 //  AddViewController.swift
 //  Panic Button
 //
-//  Created by MACBOOK on 11/17/16.
+//  Created by Erick Valentin Blanco Puerto on 11/17/16.
 //  Copyright © 2016 Anexoft. All rights reserved.
 //
 
@@ -15,8 +15,6 @@ class AddViewController: UIViewController {
 
     var index = 0
     var data = [""]
-    //a flag that determines if theres new data to store in the array
-    var update = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +25,6 @@ class AddViewController: UIViewController {
         else{
             nameTextField.text = ""
         }
-        // Do any additional setup after loading the view.
+        
     }
 }

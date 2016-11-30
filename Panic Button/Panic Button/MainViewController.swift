@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  Panic Button
 //
-//  Created by MACBOOK on 11/17/16.
+//  Created by Erick Valentin Blanco Puerto on 11/17/16.
 //  Copyright © 2016 Anexoft. All rights reserved.
 //
 
@@ -56,41 +56,48 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRow indexPath: NSIndexPath){
-        if indexPath.section == 0{
-            nameTextField.becomeFirstResponder()
-        }
-    }*/
-    
-    @IBAction func backBtn(_ segue: UIStoryboardSegue) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func saveBtn(_ segue: UIStoryboardSegue) {
-        let newContact = segue.source as! AddViewController
-        contacts.append(newContact.nameTextField.text!)
-        tableView.reloadData()
-        dismiss(animated: true, completion: nil)
-     }
-    
-    
-    //Accesing to the labels in the addViewController
+    //Accesing to addViewController and pass the data from mainviewcontroller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail"{
             if let index = sender as? Int{
                 let guest = segue.destination as! AddViewController
                 guest.data = contacts
                 guest.index = index
-                guest.update = 1
             }
         }
     }
     
-    /*//Used to delete a row
+    //Used to cancel to add action and return to the main view controller
+    @IBAction func backBtn(_ segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //This function is used to save or update a table view cell on this view controller. The function is
+    //connected to a nav bar button on addviewcontroller and works with a segue way connected to it.
+    @IBAction func saveBtn(_ sender: UIStoryboardSegue){
+        if let newContact = sender.source as? AddViewController{
+            if let select = tableView.indexPathForSelectedRow{
+                //update a cell
+                contacts[select.row] = newContact.nameTextField.text!
+                tableView.reloadData()
+                dismiss(animated: true, completion: nil)
+                
+             }
+            else{
+                //add a new cell
+                contacts.append(newContact.nameTextField.text!)
+                tableView.reloadData()
+                dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
+    
+    //Used to delete a row using a swipe gesture on a table view cell
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             contacts.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
-    }*/
+    }
 }

@@ -117,7 +117,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="PJb-CS-jJI">
                                             <connections>
                                                 <action selector="saveBtn:" destination="8zx-wA-vWT" id="n6m-4K-Zyi"/>
-                                                <segue destination="UCm-5j-Rl6" kind="unwind" identifier="SaveContact" unwindAction="saveBtn:" id="6Sb-zY-4Mv"/>
+                                                <segue destination="UCm-5j-Rl6" kind="unwind" unwindAction="saveBtn:" id="PR3-D8-g5G"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
