@@ -15,6 +15,7 @@
 		FA7A63EB1DDE5B3A004E3F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7A63E91DDE5B3A004E3F5C /* LaunchScreen.storyboard */; };
 		FA7A63F61DDE5B3B004E3F5C /* Panic_ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A63F51DDE5B3B004E3F5C /* Panic_ButtonTests.swift */; };
 		FA7A64011DDE5B3B004E3F5C /* Panic_ButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A64001DDE5B3B004E3F5C /* Panic_ButtonUITests.swift */; };
+		FA8DE7521DEF62EE0034A22C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DE7511DEF62EE0034A22C /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FA7A63FC1DDE5B3B004E3F5C /* Panic ButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panic ButtonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7A64001DDE5B3B004E3F5C /* Panic_ButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panic_ButtonUITests.swift; sourceTree = "<group>"; };
 		FA7A64021DDE5B3B004E3F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8DE7511DEF62EE0034A22C /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				FA7A63E01DDE5B3A004E3F5C /* AppDelegate.swift */,
 				FA7A63E41DDE5B3A004E3F5C /* Main.storyboard */,
+				FA8DE7511DEF62EE0034A22C /* Contact.swift */,
 				FA7A63E71DDE5B3A004E3F5C /* Assets.xcassets */,
 				FA7A63E91DDE5B3A004E3F5C /* LaunchScreen.storyboard */,
 				FA7A63EC1DDE5B3A004E3F5C /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8DE7521DEF62EE0034A22C /* Contact.swift in Sources */,
 				FA7A63E11DDE5B3A004E3F5C /* AppDelegate.swift in Sources */,
 				FA3436631DDE816C0053D40A /* MainViewController.swift in Sources */,
 				FA3436651DDE87A30053D40A /* AddViewController.swift in Sources */,
