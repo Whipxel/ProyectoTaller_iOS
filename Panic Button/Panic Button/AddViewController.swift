@@ -32,16 +32,13 @@ class AddViewController: UIViewController {
             phoneTextField.text = ""
         }
         
-        //checkTextFields()
         nameTextField.becomeFirstResponder()
     }
     
-    func checkTextFields(){
-        if nameTextField.text == ""{
-            saveBtn.isEnabled = false
-        }
-        else{
-            saveBtn.isEnabled = true
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ReturnToContacts"{
+             print("Yes")
+            dismiss(animated: true, completion: nil)
         }
     }
     

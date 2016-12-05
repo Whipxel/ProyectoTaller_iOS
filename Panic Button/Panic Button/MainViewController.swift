@@ -21,7 +21,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.dataSource = self
         tableView.delegate = self
-        
         loadData()
     }
     
@@ -36,6 +35,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     private func loadData(){
         if let dataIn = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Contact]{
             contacts = dataIn
+        }
+        else{
+            let sample = Contact(name: "911",email: "911@mail.com", phone: "911")
+            contacts.append(sample!)
         }
     }
     
@@ -81,11 +84,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 guest.index = index
             }
         }
-    }
-    
-    //Used to cancel to add action and return to the main view controller
-    @IBAction func backBtn(_ segue: UIStoryboardSegue) {
-        dismiss(animated: true, completion: nil)
+        else if segue.identifier == "ReturnToSend"{
+            print("Yes")
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     //This function is used to save or update a table view cell on this view controller. The function is
@@ -94,8 +96,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         if let newContact = sender.source as? AddViewController{
             if let select = tableView.indexPathForSelectedRow{
                 //update a cell if theres data in the text fields
-                if newContact.nameTextField.text != ""{ // validar email y numero
-                    contacts[select.row].name = newContact.nameTextField.text!
+                if newContact.nameTextField.text != "" && newContact.emailTextField.text != "" && newContact.phoneTextField.text != ""{                     contacts[select.row].name = newContact.nameTextField.text!
                     contacts[select.row].email = newContact.emailTextField.text!
                     contacts[select.row].phone = newContact.phoneTextField.text!
                     //Guardar los cambios realizados
@@ -105,16 +106,24 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
              }
             else{
                 //add a new cell if theres data on the text fields
-                if newContact.nameTextField.text != ""{ //validar email y numero
+                if newContact.nameTextField.text != "" && newContact.emailTextField.text != "" && newContact.phoneTextField.text != ""{
                     let new = Contact(name: newContact.nameTextField.text!, email: newContact.emailTextField.text!, phone: newContact.phoneTextField.text!)
-                    
-                    //contacts.append(new!)
                     saveData(contact: new!)
                     tableView.reloadData()
                 }
             }
+            
+            if newContact.nameTextField.text == "" && newContact.emailTextField.text == "" && newContact.phoneTextField.text == ""{
+                let alert = UIAlertController(title: "Error", message: "Something went wrong insert the information again", preferredStyle: .alert)
+                let exit = UIAlertAction(title: "Ok", style: .default){
+                    (alertAction: UIAlertAction) in
+                }
+                
+                alert.addAction(exit)
+                self.present(alert, animated: true, completion: nil)
+            }
         }
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
     
     
