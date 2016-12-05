@@ -62,6 +62,7 @@ class SendMailViewController: UIViewController, MFMailComposeViewControllerDeleg
         // Present the view controller modally.
         if MFMailComposeViewController.canSendMail() {
             self.present(mail, animated: true, completion: nil)
+    
         }
         else{
             let alert = UIAlertController(title: "Error", message: "Mail services are not available", preferredStyle: .alert)
@@ -78,8 +79,8 @@ class SendMailViewController: UIViewController, MFMailComposeViewControllerDeleg
     }
     
     //Used to return from the mail view controller
-    func mailComposeController(controller: MFMailComposeViewController,
-                               didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
         // Check the result or perform other tasks.
         // Dismiss the mail compose view controller.
         controller.dismiss(animated: true, completion: nil)

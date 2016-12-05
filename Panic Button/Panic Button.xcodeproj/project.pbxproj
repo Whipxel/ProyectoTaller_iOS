@@ -217,6 +217,7 @@
 				TargetAttributes = {
 					FA7A63DC1DDE5B3A004E3F5C = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2HSRAGGGFF;
 						ProvisioningStyle = Automatic;
 					};
 					FA7A63F01DDE5B3B004E3F5C = {
@@ -438,8 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2HSRAGGGFF;
 				INFOPLIST_FILE = "Panic Button/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-Button";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,8 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2HSRAGGGFF;
 				INFOPLIST_FILE = "Panic Button/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nexus-com.Panic-Button";
 				PRODUCT_NAME = "$(TARGET_NAME)";
