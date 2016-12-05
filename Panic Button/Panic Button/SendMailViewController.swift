@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 import MessageUI
 
-class SendMailViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class SendMailViewController: UIViewController, MFMailComposeViewControllerDelegate, CLLocationManagerDelegate  {
 
+    var contacts = [Contact]()
+    let manager = CLLocationManager()
+    @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
 
     }
-
-    var contacts = [Contact]()
 
     //Determines the filepath to save the data used in the application
     var filePath: String {
@@ -52,12 +59,13 @@ class SendMailViewController: UIViewController, MFMailComposeViewControllerDeleg
         }
         
         mail.setToRecipients(recipients)
-        mail.setSubject("Hello!")
-        mail.setMessageBody("Hello this is my message body!", isHTML: false)
+        mail.setSubject("Help me I am in danger!!")
+        mail.setMessageBody("I am in danger I need you in this moment in this place please!!", isHTML: false)
         //these next 2 lines attach the photo to the emailabout to send
-        /*var screenshot = screenShotMethod()
-         let imageData: NSData = UIImagePNGRepresentation(screenshot)!
-         mail.addAttachmentData(imageData, mimeType: "image/png", fileName: "imageName")*/
+        let screenshot = screenShotMethod()
+        //let mapIn = mapView as UIImage
+        let imageData: NSData = UIImagePNGRepresentation(screenshot)! as NSData
+        mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "imageName")
         
         // Present the view controller modally.
         if MFMailComposeViewController.canSendMail() {
@@ -98,4 +106,18 @@ class SendMailViewController: UIViewController, MFMailComposeViewControllerDeleg
         //Save it to the camera roll (only for testing porpuse)
         //UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
     }
+    
+    //MARK: Map setup
+    //Extract user's location
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        mapView.setRegion(region, animated: true)
+        self.mapView.showsUserLocation = true
+    }
+    
+
+    
 }
