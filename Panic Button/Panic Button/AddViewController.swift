@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
@@ -17,10 +17,15 @@ class AddViewController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
 
     var index = 0
-    //var data = [""]
     var data = [Contact]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        phoneTextField.delegate = self
+        
         if index < data.count {
             nameTextField.text = data[index].name
             emailTextField.text = data[index].email
@@ -32,15 +37,40 @@ class AddViewController: UIViewController {
             phoneTextField.text = ""
         }
         
+        saveBtn.isEnabled = false
+        checkTextFields()
+        
         nameTextField.becomeFirstResponder()
+        emailTextField.becomeFirstResponder()
+        phoneTextField.becomeFirstResponder()
+        
     }
     
+    //MARK: Save Button setup
+    
+    
+    func checkTextFields(){
+        if nameTextField.text! != "" && emailTextField.text! != "" && phoneTextField.text! != ""{
+            saveBtn.isEnabled = true
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        checkTextFields()
+        //saveBtn.isEnabled = true
+    }
+    
+    //MARK: Segue way setup
+    
+    //segue way to return to the contacts view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ReturnToContacts"{
              print("Yes")
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    //MARK: calling setup
     
     //Used to make phone calls
     @IBAction func MakeACall(_ sender: AnyObject) {
