@@ -42,4 +42,24 @@ class AddViewController: UIViewController {
         }
     }
     
+    //Used to make phone calls
+    @IBAction func MakeACall(_ sender: AnyObject) {
+        if phoneTextField.text != ""{
+            print("Yes")
+            if let url = URL(string: "tel://\(phoneTextField.text!)") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+        else{
+            print("No")
+            let alert = UIAlertController(title: "Error", message: "There's no phone number", preferredStyle: .alert)
+            let exit = UIAlertAction(title: "OK", style: .default){
+                (alertAction: UIAlertAction) in
+            }
+            
+            alert.addAction(exit)
+            self.present(alert, animated: true, completion:nil)
+        }
+    }
+    
 }

@@ -11,7 +11,6 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     //var contacts = [String()]
-    //var contacts = [ "contact_1", "contact 2", "contact 3", "contact 4", "contact 5"]
     var contacts = [Contact]()
     
     @IBOutlet weak var tableView: UITableView!
@@ -23,6 +22,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         loadData()
     }
+    
+    //MARK: Persistence setup
     
     //Determines the filepath to save the data used in the application
     var filePath: String {
@@ -48,6 +49,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         NSKeyedArchiver.archiveRootObject(contacts, toFile: filePath)
     }
     
+    //MARK: Table view setup
+    
     //Determinates the number of sections in the table view
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -66,6 +69,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.textLabel?.text = contacts[indexPath.row].name
         return cell
     }
+    
+    //MARK: Segue setup
     
     //Move to the addViewController touching a row
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -103,6 +108,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     NSKeyedArchiver.archiveRootObject(contacts, toFile: filePath)
                     tableView.reloadData()
                 }
+ 
              }
             else{
                 //add a new cell if theres data on the text fields
@@ -113,19 +119,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }
             
-            if newContact.nameTextField.text == "" && newContact.emailTextField.text == "" && newContact.phoneTextField.text == ""{
-                let alert = UIAlertController(title: "Error", message: "Something went wrong insert the information again", preferredStyle: .alert)
-                let exit = UIAlertAction(title: "Ok", style: .default){
-                    (alertAction: UIAlertAction) in
-                }
-                
-                alert.addAction(exit)
-                self.present(alert, animated: true, completion: nil)
-            }
         }
         //dismiss(animated: true, completion: nil)
     }
     
+    //MARK: Deletion action
     
     //Used to delete a row using a swipe gesture on a table view cell
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
